@@ -1,0 +1,18 @@
+Create table student(std_id varchar(10),std_name char(20),contact varchar(10),addr char(10));
+insert into student values(101,'Yad',123456789,'Bhekrai');
+select * from student;
+insert into student values(102,'Ram',123456780,'nagar');
+insert into student values(103,'Chad',123456689,'cheh');
+insert into student values(104,'hii',128456789,'Bheai');
+insert into student values(105,'tie',126456789,'Bheai');
+insert into student values(106,'Yae',123756789,'Bhekr');
+select * from student;
+Create table course(course_id varchar(10),std_id varchar(10));
+insert into course values(1,101);
+insert into course values(2,102);
+insert into course values(4,103);
+insert into course values(4,104);
+insert into course values(5,105);
+insert into course values(6,106);
+select * from course;
+select student.std_id,student.std_name,.course_id from student inner join course on student.std_id=course.std_id;
